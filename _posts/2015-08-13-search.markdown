@@ -1,0 +1,19 @@
+---
+layout: post
+title: "search capabilities"
+date: 2015-08-13
+tags: general
+---
+Basic search functionality is provided by Christian Fei's [Simple Jekyll Search](http://github.com/christian-fei/Simple-Jekyll-Search). On the homepage, users can search for posts by category and/or tags.
+
+By default, full-text search is *not* enabled.
+To enable full-text search, backup the original copy of `search.json` and rename the `search_fulltxt.json` file in the root of this repository to `search.json`.
+
+On a Unix system, the commands would be:
+
+{% highlight bash %}
+mv search.json search.json.bak
+mv search_fulltxt.json search.json
+{% endhighlight %}
+
+For more information on customizing the "search" functionality, see [the original repository](http://github.com/christian-fei/Simple-Jekyll-Search). 

@@ -1,0 +1,12 @@
+#+TITLE: ejrx-jekyll
+A (less) very minimal Jekyll theme for (my) personal blog. 
+
+This theme is a fork of @oneohthree's [[http://github.com/oneohthree/sudo-jekyll][sudo-jekyll]] theme.
+
+All the differences are additions I made for some additional functionality.
+
+* Key Differences
+1. Added basic "search" feature using [[http://github.com/christianfei/Simple-Jekyll/Search][Simple Jekyll Search]]
+2. Support for code highlighting with Pygments
+3. MathJax is available on all post pages
+4. "about" and "contact" links underneath the copyright

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+	<head>
+    {% include common_head.html %}
+	</head>
+	<body>
+    <div class="search">
+      <input type="text" class="search-field" id="search-input"
+             placeholder="search...">
+    </div>
+    {% include header.html %}
+		<div class="content" role="main">
+			{{ content }}
+		</div>
+		{% if paginator %}
+		<nav class="pagination group" role="navigation">
+		{% if paginator.next_page %}
+			<a href="{{paginator.next_page_path}}">&larr;</a>
+		{% endif %}
+		{% if paginator.previous_page %}
+			<a href="{{paginator.previous_page_path}}">&rarr;</a>
+		{% endif %}
+		</nav>
+		{% endif %}
+		{% include footer.html %}
+		<script>
+			document.body.onscroll = function() {
+				var e = document.getElementById('go-top');
+				if (document.body.scrollTop !=0 || document.documentElement.scrollTop != 0) {
+					e.style.right = '.5em';
+				}
+				else e.style.right = '-1em';
+			}
+			var timeOut;
+			function scrollToTop() {
+				if (document.body.scrollTop !=0 || document.documentElement.scrollTop != 0) {
+					window.scrollBy(0,-50);
+					timeOut=setTimeout('scrollToTop()',5);
+				}
+				else clearTimeout(timeOut);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jekyll-search.js"></script>
+<script type="text/javascript">
+  SimpleJekyllSearch({
+  searchInput : document.getElementById('search-input'),
+  resultsContainer : document.getElementById('entries'),
+  searchResultTemplate : '<li class="entry group"><div class="entry-date"><time datetime="{date}">{date}</time></div><div class="entry-title"><h2><a class="post-link" href="{url}">{title}</a></h2></div></li>',
+  json : '/search.json',
+  });
+  $(document).ready(function() {
+  $('.search-field').show();
+  });
+</script>

@@ -1,0 +1,21 @@
+---
+layout: post
+title: "mathjax support"
+date: 2015-07-16
+tags: general
+---
+Post pages include a reference to [MathJax](http://mathjax.org).
+
+Two examples are included, below.
+
+### From the MathJax documentation:
+
+When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+### The Lorenz Equations
+
+$$\begin{align}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{align}$$
